@@ -1,10 +1,8 @@
 # KING COUNTY HOUSING PRICE PREDICTION
 
 Author: Scholar Chepkirui
-<<<<<<< HEAD
+
 ![My image](images/houses.png)
-=======
->>>>>>> 0140d4c714f9079cca84de612fc9f32441d94a83
 
 ## Project overview
 This project uses regression modeling to analyze house sales in King County. The final model can predict the price of a house based on various features, hence it will be used by a real estate agency to establish a realistic asking price. The findings from the model shows the house features that have a great impact on the price of a house based on past sales. These findings can be used by the real estate agency to advise homeowners on any improvements that can be made to increase the house price.  
@@ -72,5 +70,3 @@ For additional information, contact Scholar Chepkirui at scholarchepkirui@gmail.
 ├── README.md                                 <- The top-level README for reviewers of this project
 ├── presentation.pdf                          <- PDF version of project presentation
 └── student.ipynb                             <- Narrative documentation of analysis in Jupyter notebook
-=======
->>>>>>> 0140d4c714f9079cca84de612fc9f32441d94a83
