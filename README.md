@@ -1,66 +1,70 @@
-# Phase 2 Project
+# KING COUNTY HOUSING PRICE PREDICTION
 
-Another module down--you're almost half way there!
+Author: Scholar Chepkirui
+![My image](images/houses.png)
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-2-project-campus/master/halfway-there.gif)
+## Project overview
+This project uses regression modeling to analyze house sales in King County. The final model can predict the price of a house based on various features, hence it will be used by a real estate agency to establish a realistic asking price. The findings from the model shows the house features that have a great impact on the price of a house based on past sales. These findings can be used by the real estate agency to advise homeowners on any improvements that can be made to increase the house price.  
 
-All that remains in Phase 2 is to put our newfound data science skills to use with a large project! This project should take 20 to 30 hours to complete.
+## Business Problem
 
-## Project Overview
+There is a real estate agency in King County that helps homeowners sell homes. The agency has 18 house unique features that it considers when estimating the value of a house. Due to the many house features available, the real estate agency has a difficulty in establishing a realistic asking price. Additionally, the real estate agency advises homeowners on how to increase the estimated value of their homes, such as by doing home renovations. However, they are not really sure if the advice given has a great impact on the house price value.  
+This project aims to build a  model that  can predict the price of a house based on various features. This helps the agency in coming up with a realistic asking price. The findings obtained while building the model provides insights on the house features that have a greater impact on house price. From these findings, the agency can appropriately advise the homeowner on any improvements that can be made to increase the house price. 
 
-For this project, you will use regression modeling to analyze house sales in a northwestern county.
+## Data
+This project uses the King County House Sales dataset. The dataset has columns such as date, price, floors, sqft_living,  bedrooms, waterfront, sqft_lot, condition, grade, yr_built, yr_renovated, sqft_basement, sqft_lot15 and sqft_living15.
 
-### The Data
+## Methods
+The main method used in this project is regression modeling. The steps taken include:
+- Business understanding
+- Data understanding
+- Data processing
+- Modeling
 
-This project uses the King County House Sales dataset, which can be found in  `kc_house_data.csv` in the data folder in this repo. The description of the column names can be found in `column_names.md` in the same folder. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions about what the data means.
+## Results
+Sqft_living has the highest positive correlation with price. The baseline model was thus built using sqft_living as the only predictive feature.
+![My image](images/sqftliving.png)
 
-It is up to you to decide what data from this dataset to use and how to use it. If you are feeling overwhelmed or behind, we recommend you ignore some or all of the following features:
+The final model had the highest R-value and the lowest MSE errors when compared to other models. Multiple features such as sqft_living, floors,  bedrooms, waterfront, house_age, sqft_lot,  condition and renovations were used in this model.
+The linear regression assumptions were investigated using this model in order to understand how much the model violates the assumptions.
 
-* date
-* view
-* sqft_above
-* sqft_basement
-* yr_renovated
-* zipcode
-* lat
-* long
-* sqft_living15
-* sqft_lot15
+### Investigating linearity
+![My image](images/linearity.png)
 
-### Business Problem
+Based on the training set and the test set, there is a linear relationship between the target variable and the predictors.
 
-It is up to you to define a stakeholder and business problem appropriate to this dataset.
+### Investigating Normality
+![My image](images/normality.png)
 
-If you are struggling to define a stakeholder, we recommend you complete a project for a real estate agency that helps homeowners buy and/or sell homes. A business problem you could focus on for this stakeholder is the need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
+The model residuals have a normal distribution.
 
-## Deliverables
+### Investigating Homoscedasticity
+![My image](images/homoscedascity.png)
 
-There are three deliverables for this project:
+The shape above is not cone-like, hence the homoscedascity assumption is met. The residuals are almost equal across the regression line.
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+## Conclusions and recommendations
+The final model will mainly be used for predictive purposes. 
+It can also be used for inferential purposes since none of the assumptions of linear regression has been violated. Most of the house features were found to have a significant effect on the price of houses.
+When various features were selected using various methods, the performance of the model was lower than that of the model with all the predictive features. The house features used for prediction, with a significant effect on the price value include floors, sqft_living, bedrooms, waterfront, sqft_lot, condition, renovations and house_age.
+The real estate agency should advise the homeowners to renovate their homes before selling in order to improve the sale price of the house.
 
-### Key Points
+## Future work
+- Other types of modeling other than linear regression should be applied to determine the model that has the highest performance.
+- In the real estate industry, the price of houses may be affected by other factors such as consumer sentiment, credit availability, inflation and other economic factors. Data should be collected on these external factors and the model adjusted based on the effects of these factors.
 
-* **Your deliverables should explicitly address each step of the data science process.** Refer to [the Data Science Process lesson](https://github.com/learn-co-curriculum/dsc-data-science-processes) from Topic 19 for more information about process models you can use.
 
-* **Your Jupyter Notebook should demonstrate an iterative approach to modeling.** This means that you begin with a basic model, evaluate it, and then provide justification for and proceed to a new model. After you finish refining your models, you should provide 1-3 paragraphs discussing your final model - this should include interpreting at least 3 important parameter estimates or statistics.
+##  For More Information
+See the full analysis in the [Jupyter Notebook](https://github.com/Scholarchep/King-County-housing-price-predictions/blob/main/student.ipynb) or review this [presentation](https://github.com/Scholarchep/King-County-housing-price-predictions/blob/main/presentation.pdf).
+For additional information, contact Scholar Chepkirui at scholarchepkirui@gmail.com
 
-* **Based on the results of your models, your notebook and presentation should discuss at least two features that have strong relationships with housing prices.**
 
-## Getting Started
+## Repository Structure
+<<<<<<< HEAD
 
-Start on this project by forking and cloning [this project repository](https://github.com/learn-co-curriculum/dsc-phase-2-project) to get a local copy of the dataset.
-
-We recommend structuring your project repository similar to the structure in [the Phase 1 Project Template](https://github.com/learn-co-curriculum/dsc-project-template). You can do this either by creating a new fork of that repository to work in or by building a new repository from scratch that mimics that structure.
-
-## Project Submission and Review
-
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
-
-## Summary
-
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+├── images                                    <- Both sourced externally and generated from code
+├── data                                      <- Both sourced externally and generated from code
+├── README.md                                 <- The top-level README for reviewers of this project
+├── presentation.pdf                          <- PDF version of project presentation
+└── student.ipynb                             <- Narrative documentation of analysis in Jupyter notebook
