@@ -14,7 +14,7 @@ This project aims to build a  model that  can predict the price of a house based
 
 ## Data
 This project uses the King County House Sales dataset. The dataset has columns such as date, price, floors, sqft_living,  bedrooms, waterfront, sqft_lot, condition, grade, yr_built, yr_renovated, sqft_basement, sqft_lot15 and sqft_living15.
-<<<<<<< HEAD
+
 
 ## Methods
 The main method used in this project is regression modeling. The steps taken include:
