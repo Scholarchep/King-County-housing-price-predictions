@@ -58,7 +58,7 @@ The real estate agency should advise the homeowners to renovate their homes befo
 
 
 ##  For More Information
-See the full analysis in the [Jupyter Notebook](https://github.com/Scholarchep/King-County-housing-price-predictions/blob/main/student.ipynb) or review this [presentation](https://github.com/Scholarchep/King-County-housing-price-predictions/blob/main/presentation.pdf).
+See the full analysis in the [Jupyter Notebook](https://github.com/Scholarchep/King-County-housing-price-predictions/blob/main/king_county.ipynb) or review this [presentation](https://github.com/Scholarchep/King-County-housing-price-predictions/blob/main/presentation.pdf).
 For additional information, contact Scholar Chepkirui at scholarchepkirui@gmail.com
 
 
